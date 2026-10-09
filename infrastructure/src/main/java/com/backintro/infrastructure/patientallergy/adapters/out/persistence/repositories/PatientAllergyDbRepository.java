@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.patientallergy.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.patientallergy.adapters.out.persistence.entity.PatientAllergyEntity;
 
-public interface PatientAllergyDbRepository extends DbRepository<PatientAllergyEntity, UUID> {
+public interface PatientAllergyDbRepository extends JpaRepository<PatientAllergyEntity, UUID> {
 }

@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.professional.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.professional.adapters.out.persistence.entity.ProfessionalEntity;
 
-public interface SpringDataProfessionalDbRepository extends DbRepository<ProfessionalEntity, UUID> {
+public interface SpringDataProfessionalDbRepository extends JpaRepository<ProfessionalEntity, UUID> {
 }

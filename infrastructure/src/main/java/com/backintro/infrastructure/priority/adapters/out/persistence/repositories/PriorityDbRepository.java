@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.priority.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.priority.adapters.out.persistence.entity.PriorityEntity;
 
-public interface PriorityDbRepository extends DbRepository<PriorityEntity, UUID> {
+public interface PriorityDbRepository extends JpaRepository<PriorityEntity, UUID> {
 }

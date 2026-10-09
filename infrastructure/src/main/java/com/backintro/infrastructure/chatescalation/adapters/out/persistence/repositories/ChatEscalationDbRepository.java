@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.chatescalation.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.chatescalation.adapters.out.persistence.entity.ChatEscalationEntity;
 
-public interface ChatEscalationDbRepository extends DbRepository<ChatEscalationEntity, UUID> {
+public interface ChatEscalationDbRepository extends JpaRepository<ChatEscalationEntity, UUID> {
 }

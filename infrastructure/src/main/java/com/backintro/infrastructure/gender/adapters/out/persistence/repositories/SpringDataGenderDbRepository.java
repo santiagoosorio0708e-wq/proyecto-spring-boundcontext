@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.gender.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.gender.adapters.out.persistence.entity.GenderEntity;
 
-public interface SpringDataGenderDbRepository extends DbRepository<GenderEntity, UUID> {
+public interface SpringDataGenderDbRepository extends JpaRepository<GenderEntity, UUID> {
 }

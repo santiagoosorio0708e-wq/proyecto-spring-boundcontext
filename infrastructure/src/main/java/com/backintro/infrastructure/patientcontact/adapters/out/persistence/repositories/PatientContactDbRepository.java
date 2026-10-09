@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.patientcontact.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.patientcontact.adapters.out.persistence.entity.PatientContactEntity;
 
-public interface PatientContactDbRepository extends DbRepository<PatientContactEntity, UUID> {
+public interface PatientContactDbRepository extends JpaRepository<PatientContactEntity, UUID> {
 }

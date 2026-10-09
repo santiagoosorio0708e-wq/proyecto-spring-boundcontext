@@ -1,8 +1,8 @@
 package com.backintro.infrastructure.empresa.adapters.out.persistence.repositories;
 
 import java.util.UUID;
-import org.springframework.data.jpa.repository.DbRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.backintro.infrastructure.empresa.adapters.out.persistence.entity.EmpresaEntity;
 
-public interface EmpresaDbRepository extends DbRepository<EmpresaEntity, UUID> {
+public interface EmpresaDbRepository extends JpaRepository<EmpresaEntity, UUID> {
 }
