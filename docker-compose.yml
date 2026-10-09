@@ -1,6 +1,25 @@
 services:
 
   # ==========================================================
+  # Tomcat Server (Spring Boot WAR)
+  # ==========================================================
+  tomcat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: intro_tomcat
+    ports:
+      - "8080:8080"
+    depends_on:
+      intro_postgres_db:
+        condition: service_healthy
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - intro_postgres_network
+
+  # ==========================================================
   # Workspace para Visual Studio Code
   # ========================================================== 
   workspace:
